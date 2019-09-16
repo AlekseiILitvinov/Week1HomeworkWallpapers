@@ -17,16 +17,16 @@ public class Main {
 		double wallpaperWidth = 1.06;
 
 		//Uncomment these lines for additional interactivity
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("Please enter the room width in meters: ");
-		roomWidth = Double.parseDouble(scanner.next());
-		System.out.print("Please enter the room length in meters: ");
-		roomLength = Double.parseDouble(scanner.next());
-		System.out.print("Please enter the heights of the ceiling in meters: ");
-		roomHeight = Double.parseDouble(scanner.next());
-		System.out.print("If the wallpaper has pattern (rapport) shift, please enter the enter the value of the shift" +
-				" in cm, or enter 0 otherwise: ");
-		shiftPattern = Double.parseDouble(scanner.next()) / 100; //adjusting to meters
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("Please enter the room width in meters: ");
+//		roomWidth = Double.parseDouble(scanner.next());
+//		System.out.print("Please enter the room length in meters: ");
+//		roomLength = Double.parseDouble(scanner.next());
+//		System.out.print("Please enter the heights of the ceiling in meters: ");
+//		roomHeight = Double.parseDouble(scanner.next());
+//		System.out.print("If the wallpaper has pattern (rapport) shift, please enter the enter the value of the shift" +
+//				" in cm, or enter 0 otherwise: ");
+//		shiftPattern = Double.parseDouble(scanner.next()) / 100; //adjusting to meters
 
 		double roomPerimeter = (roomWidth + roomLength) * 2;
 		int stripsNeeded = (int) Math.ceil(roomPerimeter / wallpaperWidth);
