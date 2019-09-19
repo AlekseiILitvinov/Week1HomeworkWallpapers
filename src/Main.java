@@ -9,11 +9,6 @@ import java.util.Scanner;
  */
 public class Main {
 	public static void main(String[] args) {
-		double roomWidth;
-		double roomLength;
-		double roomHeight;
-		double shiftPattern;
-		double patternSize;
 		double wallpaperWidth = 1.06;
 		double padding = 0.1;
 		double rollLength = 10.0;
@@ -21,16 +16,16 @@ public class Main {
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Please enter the room width in meters: ");
-		roomWidth = Double.parseDouble(scanner.next());
+		double roomWidth = Double.parseDouble(scanner.next());
 		System.out.print("Please enter the room length in meters: ");
-		roomLength = Double.parseDouble(scanner.next());
+		double roomLength = Double.parseDouble(scanner.next());
 		System.out.print("Please enter the heights of the ceiling in meters: ");
-		roomHeight = Double.parseDouble(scanner.next());
+		double roomHeight = Double.parseDouble(scanner.next());
 		System.out.print("Please enter the pattern (rapport)size in cm (enter 0 if  pattern matching is not needed): ");
-		patternSize = Double.parseDouble(scanner.next()) / 100;
+		double patternSize = Double.parseDouble(scanner.next()) / 100;
 		System.out.print("If the wallpaper has pattern (rapport) shift, please enter the enter the value of the shift" +
 				" in cm, or enter 0 otherwise: ");
-		shiftPattern = Double.parseDouble(scanner.next()) / 100;
+		double shiftPattern = Double.parseDouble(scanner.next()) / 100;
 
 		double roomPerimeter = (roomWidth + roomLength) * 2;
 		int stripsNeeded = (int) Math.ceil(roomPerimeter / wallpaperWidth);
